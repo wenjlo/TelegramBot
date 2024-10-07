@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  app:
+    image: telegram_bot:v0.0.4
+    volumes:
+      - data:/send_tg/data/
+
+volumes:
+  data:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /run/desktop/mnt/host/c/Users/User/Downloads/Telegram Desktop
