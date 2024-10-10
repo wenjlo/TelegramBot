@@ -1,7 +1,7 @@
 FROM python:3.11.9
 # 在container環境內，創建一個stock並移動到stock file裡
 WORKDIR /send_tg
-# 將當前目錄資料加入到container內的stock資料夾
+# 將當前目錄資料加入到container內的 send_tg資料夾
 ADD . /send_tg
 # pip 安裝requirements.txt內的套件
 RUN python3 -m pip install -r requirements.txt
